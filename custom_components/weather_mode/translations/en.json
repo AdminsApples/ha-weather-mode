@@ -1,0 +1,91 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Weather Mode",
+        "description": "Pick the weather entity to follow. After this, turn on **Weather mode** in Settings > System > Labs to see it.",
+        "data": {
+          "weather_entity": "Weather to follow",
+          "intensity": "How much is on screen",
+          "frost_below": "Show frost when it's this cold or colder",
+          "use_wind": "Show wind when it's windy",
+          "show_on_mobile": "Show on phones and narrow screens",
+          "hide_winter_mode": "Hide the built-in Winter mode snowflakes while Weather mode is on"
+        },
+        "data_description": {
+          "weather_entity": "Any weather entity works, for example Met Office, Met.no or AccuWeather.",
+          "frost_below": "Frost creeps in round the edges of the screen when the temperature is at or below this.",
+          "use_wind": "Adds blowing streaks when the wind is 30 km/h or more.",
+          "hide_winter_mode": "So you don't get snow on a sunny day if Winter mode is also on in Labs."
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "That weather entity doesn't exist."
+    },
+    "abort": {
+      "single_instance_allowed": "Weather Mode is already set up. Use Configure to change it."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Weather Mode settings",
+        "data": {
+          "weather_entity": "Weather to follow",
+          "intensity": "How much is on screen",
+          "frost_below": "Show frost when it's this cold or colder",
+          "use_wind": "Show wind when it's windy",
+          "show_on_mobile": "Show on phones and narrow screens",
+          "hide_winter_mode": "Hide the built-in Winter mode snowflakes while Weather mode is on"
+        },
+        "data_description": {
+          "weather_entity": "Any weather entity works, for example Met Office, Met.no or AccuWeather.",
+          "frost_below": "Frost creeps in round the edges of the screen when the temperature is at or below this.",
+          "use_wind": "Adds blowing streaks when the wind is 30 km/h or more.",
+          "hide_winter_mode": "So you don't get snow on a sunny day if Winter mode is also on in Labs."
+        }
+      }
+    }
+  },
+  "selector": {
+    "intensity": {
+      "options": {
+        "subtle": "Subtle",
+        "normal": "Normal",
+        "strong": "Strong"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "effect": {
+        "name": "Effect",
+        "state": {
+          "auto": "Automatic (follow the weather)",
+          "sunny": "Sunny",
+          "clear-night": "Clear night",
+          "partlycloudy": "Partly cloudy",
+          "cloudy": "Cloudy",
+          "fog": "Fog",
+          "rainy": "Rain",
+          "pouring": "Heavy rain",
+          "lightning-rainy": "Thunderstorm",
+          "snowy": "Snow",
+          "snowy-rainy": "Sleet",
+          "hail": "Hail",
+          "windy": "Windy",
+          "frost": "Frost"
+        }
+      }
+    }
+  },
+  "preview_features": {
+    "weather_mode": {
+      "name": "Weather mode",
+      "description": "Like Winter mode, but it shows the real weather outside: rain when it's raining, frost round the edges when it's frosty, rays of sunshine when it's sunny, clouds drifting across when it's cloudy, fog, snow, hail, thunder and wind.\n\nIf you have animations turned off in your device's accessibility settings, this won't show.",
+      "enable_confirmation": "The weather outside will start showing on your screen. You can turn this off at any time in Labs.",
+      "disable_confirmation": "The weather overlay will stop showing on your screen. You can turn it back on at any time in Labs."
+    }
+  }
+}

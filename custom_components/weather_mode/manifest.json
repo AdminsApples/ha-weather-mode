@@ -1,0 +1,27 @@
+{
+  "domain": "weather_mode",
+  "name": "Weather Mode",
+  "codeowners": [
+    "@AdminsApples"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/AdminsApples/ha-weather-mode",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/AdminsApples/ha-weather-mode/issues",
+  "preview_features": {
+    "weather_mode": {
+      "feedback_url": "https://github.com/AdminsApples/ha-weather-mode/issues",
+      "learn_more_url": "https://github.com/AdminsApples/ha-weather-mode",
+      "report_issue_url": "https://github.com/AdminsApples/ha-weather-mode/issues"
+    }
+  },
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}
